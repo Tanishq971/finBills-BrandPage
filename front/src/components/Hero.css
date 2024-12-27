@@ -1,0 +1,65 @@
+Gradient Animation
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.bg-gradient-animated {
+  background: linear-gradient(45deg, #e0f7fa, #b3e5fc, #81d4fa, #00bcd4, #2196f3); /* Bluish gradient */
+  background-size: 400% 400%;
+  animation: gradientShift 8s ease infinite;
+}
+
+/* Chubby Text Styling */
+.chubby-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  letter-spacing: 1px;
+  padding: 8px 18px;
+  border-radius: 12px;
+  background: linear-gradient(45deg, #81d4fa, #b3e5fc);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  transform: rotate(3deg);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.chubby-text:hover {
+  transform: rotate(0deg) scale(1.1);
+  background: linear-gradient(45deg, #80deea, #2196f3);
+}
+
+/* Button Hover Effects */
+a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Pulsating Animation */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.6;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 6s infinite;
+}
+
+.caveat-brush-regular {
+  font-family: "Caveat Brush", serif;
+  font-weight: 400;
+  font-style: normal;
+}
